@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // use adminRouters as middleware
-app.use(adminRouters);
+app.use('/admin', adminRouters);
 //  -/-
 app.use(shopRoutes);
 
